@@ -1,0 +1,19 @@
+Screen {
+    layout: grid;
+    grid-size: 2 1;
+    grid-columns: 1fr 2fr;
+}
+
+#left {
+    layout: grid;
+    grid-size: 1 3;
+    grid-rows: 1fr 1fr 1fr;
+}
+
+LeftListBox {
+   height: auto;
+}
+
+ListView {
+    border: round;
+}
