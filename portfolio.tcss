@@ -6,8 +6,8 @@ Screen {
 
 #left {
     layout: grid;
-    grid-size: 1 3;
-    grid-rows: 1fr 1fr 1fr;
+    grid-size: 1 4;
+    grid-rows: 1fr 1fr 1fr 1fr;
 }
 
 LeftListBox {
@@ -15,5 +15,13 @@ LeftListBox {
 }
 
 ListView {
+    border: round;
+}
+
+Label {
+    padding: 1 2;
+}
+
+MarkdownViewer {
     border: round;
 }
