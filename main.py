@@ -5,7 +5,7 @@ from textual.containers import Container
 from textual.widgets import Header, Footer, Label, ListItem, ListView, Markdown, MarkdownViewer
 from textual import on
 
-class LeftListBox(Widget, can_focus = True):
+class LeftListBox(Widget):
     def __init__(self, borderTitle:str, labelList:List, name:str|None = None, id:str|None = None, classes:str|None = None):
         super().__init__(name=name, id=id, classes=classes)
         self.borderTitle = borderTitle
