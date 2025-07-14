@@ -68,8 +68,9 @@ class Portfolio(App):
             yield LeftListBox(borderTitle="Education", labelList=edu_list)
         yield MarkdownRenderer("assets/about.md", id="details-view")
     
+    @on(ListView.Highlighted)
     @on(ListView.Selected)
-    def update_markdown_view(self, event: ListView.Selected) -> None:
+    def update_markdown_view(self, event) -> None:
 
         selectedText = event.item.query_one(Label).renderable
         filePath = self.FILE_MAP.get(str(selectedText))

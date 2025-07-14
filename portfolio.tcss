@@ -18,6 +18,10 @@ ListView {
     border: round;
 }
 
+ListView:blur ListItem:blur {
+    background: transparent;
+}
+
 Label {
     padding: 1 2;
 }
