@@ -10,6 +10,12 @@ Screen {
     grid-rows: 1fr 1fr 1fr 1fr;
 }
 
+#right {
+    layout: grid;
+    grid-size: 1 2;
+    grid-rows: 8fr 1fr;
+}
+
 LeftListBox {
    height: auto;
 }
@@ -28,4 +34,34 @@ Label {
 
 MarkdownViewer {
     border: round;
+}
+
+#socials {
+    height: auto;
+}
+
+#social-buttons{
+    layout: horizontal;
+    border: round;
+    align-horizontal: center;
+    align-vertical: middle;
+}
+
+Button{
+    margin: 0 7;
+}
+
+#github {
+    background: #333;
+    color: white;
+}
+
+#linkedin {
+    background: #0a66c2;
+    color: white;
+}
+
+#twitter {
+    background: #1da1f2;
+    color: white;
 }
